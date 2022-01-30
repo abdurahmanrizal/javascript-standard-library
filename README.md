@@ -1,0 +1,3 @@
+### Javascript Standard Library
+
+- Number
