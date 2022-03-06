@@ -5,3 +5,4 @@
 - Array
 - Object
 - JSON (Javascript Object Notation)
+- BigInt

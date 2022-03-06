@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BigInt</title>
+</head>
+<body>
+<script>
+    // we can use BigInt method if a number or calculation number great than Number.MAX_SAFE_INTEGER (9007199254740991), recommend use BigInt
+    const a = BigInt(Number.MAX_SAFE_INTEGER)
+    const b = BigInt(Number.MAX_SAFE_INTEGER)
+
+    const c = a + b
+    console.info(c)
+    console.info(typeof c)
+    console.info(Number.MAX_SAFE_INTEGER)
+</script>
+</body>
+</html>
