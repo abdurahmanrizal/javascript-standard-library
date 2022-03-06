@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<script>
+    {
+        // Object.freeze(obj) & Object.seal(obj)
+        const person = {
+            firstName: 'Abdurahman',
+            lastName: 'Argoebie'
+        }
+
+        //    if we want to return object can't change this attribute and value, we can use method Object.freeze() and Object.seal()
+        //    Object.freeze() => Object cant change, add, delete attribute and value
+        // Object.freeze(person)
+        // Object.seal() => Object cant change,add, and delete attribute but can change value from attribute
+        Object.seal(person)
+        person.firstName = 'Nada'
+        delete person.lastName
+        console.info(person)
+    }
+
+    {
+        //    Object.assign(target,source)
+        //    if we want to copy an object from data source to object target, we can use method Object.assign()
+        const target = {
+            firstName: 'Abdurahman'
+        }
+        const source = {
+            firstName: 'Nada',
+            lastName: 'Argoebie'
+        }
+        // in case if object source have same attributed with object target, method Object.assign() overwrite object target with data object from source
+        Object.assign(target, source)
+        console.info(target)
+        console.info(source)
+    }
+
+    {
+        //    Object.values() & Object.getOwnPropertyNames()
+        const person = {
+            firstName: 'Abdurahman',
+            lastName: 'Argoebie'
+        }
+        //    if we want to know on object data have what a values, we can use method Object.values(), a method have return array with data string from values of object
+        console.info(Object.values(person))
+        //    if we want to know on object data have what a attributes, we can use method Object.getOwnPropertyNames(), a method have return array with data string from values of object
+        console.info(Object.getOwnPropertyNames(person))
+    }
+
+</script>
+</body>
+</html>

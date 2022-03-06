@@ -1,0 +1,16 @@
+{
+  "firstName": "Abdurahman",
+  "middleName": "Rizal",
+  "lastName": "Argoebie",
+  "address": {
+    "country": "Indonesia",
+    "city": "Semarang"
+  },
+  "hobbies": [
+    "Coding",
+    "Football",
+    "Reading"
+  ],
+  "isHuman": true,
+  "age": 24
+}

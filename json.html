@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+<script>
+    <!--  JSON -->
+    const person = {
+        firstName: 'Abdurahman',
+        middleName: 'Rizal',
+        lastName: 'Argoebie',
+        address: {
+            country: 'Indonesia',
+            city: 'Semarang'
+        },
+        hobbies: ['Coding', 'Football', 'Reading'],
+        isHuman: true,
+        age: 24
+    }
+    // if we want converted object data to string, we can use static method JSON.stringify(object/array)
+    const json = JSON.stringify(person)
+    console.info(json)
+    //    if we want converted string to json, we can use static method JSON.parse(object/array)
+    const jsonObject = JSON.parse(json)
+    console.info(jsonObject)
+</script>
+</body>
+</html>
